@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodland Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Woodland Kitchen</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Woodland Kitchen</h2>
+            <p>Discover the finest recipes with a touch of nature.</p>
+            <a href="#recipes" class="btn">Explore Recipes</a>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="OIP.jpg" alt="Classic Beef Stew">
+                <h3>Classic Beef Stew</h3>
+                <p>A hearty and comforting stew perfect for any season.</p>
+                <a href="#" class="btn">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="RusticBread03-768x960.jpg" alt="Rustic Bread">
+                <h3>Rustic Bread</h3>
+                <p>Bake your own rustic bread with this simple recipe.</p>
+                <a href="#" class="btn">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="FORE.jpg" alt="Forest Berry Tart">
+                <h3>Forest Berry Tart</h3>
+                <p>A delicious tart filled with fresh forest berries.</p>
+                <a href="#" class="btn">View Recipe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Woodland Kitchen is dedicated to bringing you the best recipes inspired by nature. Our goal is to create a community of food lovers who appreciate the beauty of natural ingredients. From hearty stews to delicate pastries, every recipe is crafted with care and love.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Woodland Kitchen. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

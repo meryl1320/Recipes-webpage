@@ -1,0 +1,251 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #541d05;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #541d05;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #a27c3d;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8D6E63;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #6D4C41;
+    color: #FFF;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8D6E63;
+    transform: translateY(-3px);
+}
+
+/* Header */
+header {
+    background-color: #541d05;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    color: #FFF;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('2f104fd3-25de-45b8-b5e1-12ddb37afa91.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(93, 64, 55, 0.7), rgba(237, 187, 178, 0.9));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 10px 0 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Recipes Section */
+.recipes {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #EFEBE9;
+}
+
+.recipes h2 {
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    color: #4E342E;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recipe-card {
+    background-color: #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    margin: 20px 0 10px;
+    font-size: 1.5em;
+    color: #4E342E;
+}
+
+.recipe-card p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    color: #6D4C41;
+}
+
+/* About Section */
+.about {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #D7CCC8;
+}
+
+.about h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #4E342E;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: #5D4037;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #EFEBE9;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #4E342E;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact form input, .contact form textarea {
+    padding: 15px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: #FFF;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact form input:focus, .contact form textarea:focus {
+    border-color: #8D6E63;
+    box-shadow: 0 0 8px rgba(141, 110, 99, 0.3);
+}
+
+.contact form button {
+    align-self: center;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #5D4037;
+    color: #FFF;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
