@@ -1,4 +1,4 @@
-# [Project Name] 🎯
+# [Recipes webpage] 🎯
 
 
 ## Basic Details
@@ -47,12 +47,15 @@ For Software:
 
 # Screenshots (Add at least 3)
 ![Screenshot1](Add screenshot 1 here with proper name)
-https://drive.google.com/drive/folders/1lDojo6svVbXUaRFlQcRCAnaEXATN-4nM?usp=sharing
+![Screenshot 2025-02-02 084506](https://github.com/user-attachments/assets/de6b74e8-98be-4d83-bb40-231ad30c271a)
+
 ![Screenshot2](Add screenshot 2 here with proper name)
-https://drive.google.com/drive/folders/1lDojo6svVbXUaRFlQcRCAnaEXATN-4nM?usp=sharing
+![Screenshot 2025-02-02 084520](https://github.com/user-attachments/assets/ca2622f5-fcea-495b-a097-7baa1cf9bf91)
+
 
 ![Screenshot3](Add screenshot 3 here with proper name)
-https://drive.google.com/drive/folders/1lDojo6svVbXUaRFlQcRCAnaEXATN-4nM?usp=sharing
+![Screenshot 2025-02-02 084537](https://github.com/user-attachments/assets/29d341a5-c657-4834-bbe0-3cd2b865f292)
+
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
@@ -90,7 +93,7 @@ https://drive.google.com/drive/folders/1lDojo6svVbXUaRFlQcRCAnaEXATN-4nM?usp=sha
 
 ## Team Contributions
 - [Aleena Sebastian]: [front end]
-- [Athulya Krishna]: [design]
+- [Athulya Krishna]: [design ]
 
 ---
 Made with ❤️ at TinkerHub
